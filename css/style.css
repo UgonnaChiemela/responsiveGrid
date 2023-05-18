@@ -1,0 +1,108 @@
+*
+.container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container .cards {
+    display: grid;
+    width: 1200px;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 15px;
+    height: 150px;
+  }
+  
+  .container .cards .card1 {
+    grid-row: 1 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(25, 134, 103);
+    color: white;
+
+  }
+  .container .cards .card2{
+    grid-column: 2 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(25, 134, 103);
+    color: white;
+    height: 150px;
+}
+.container .cards .card4{
+    grid-row: 4 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(204, 151, 75);
+    color: white;
+    grid-column-start: 4;
+    grid-column-end: 4;
+}
+.container .cards .card3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 68, 57);
+    color: white;
+    height: 150px;
+
+}
+.container .cards .card6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 68, 57);
+    color: white;
+    height: 150px;
+   
+}
+.container .cards .card5{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(204, 151, 75);
+    color: white;
+    height: 150px;
+}
+.container .cards .card7{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 68, 57);
+    color: white;
+    height: 150px;
+}
+.container .cards .card8{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(204, 151, 75);
+    color: white;
+    height: 150px;
+}
+@media (max-width: 1000px) and (min-width: 550px) {
+    .container .cards .card3,
+    .container .cards .card4 {
+      display: none;
+    }
+      .container .cards {
+        grid-template-columns: auto auto auto;
+      }
+  }
+  @media (max-width: 550px) {
+    .container .cards .card3,
+    .container .cards .card4,
+    .container .cards .card1 {
+      display: none;
+    }
+      .container .cards {
+        grid-template-columns: auto auto;
+      }
+      .container .cards .card2{
+        grid-column: 1 / 3;}
+  }
